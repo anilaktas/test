@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solis Teknoloji</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Solis Teknoloji</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Hakkında</a></li>
+        <li><a href="#experience">Ne Yapıyoruz?</a></li>
+        <li><a href="#projects">Ürünler</a></li>
+        <li><a href="#contact">Bize Ulaşın</a></li>
+        <li>
+          <img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Solis Teknoloji</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Hakkında</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Ne Yapıyoruz?</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Ürünler</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Bize Ulaşın</a></li>
+        <li>
+          <img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png"
+            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
+        </li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.jpg" alt="Solis picture" />
+    </div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="section__text">
+      <p class="section__text__p1">Yenilikçi LED Aydınlatma Çözümleriyle</p>
+      <h1 class="title">Geleceğe Işık Tutan</h1>
+      <p class="section__text__p2">Tarım Teknolojileri</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Broşür İncele
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          İletişim Bilgileri
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="LinkedIn profile" class="icon linkedin-icon"
+          onclick="location.href='https://linkedin.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Daha Fazlasını Tanıyın</p>
+    <h1 class="title">Hakkımızda</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Solis picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+              src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
+            <h3>Memnuniyet</h3>
+            <p>Müşterilerimiz için <br /> Her aşamada destek</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education_light.png" src-light="./assets/education_light.png"
+              src-dark="./assets/education_dark.png" alt="Education icon" class="icon" />
+            <h3>ArGe</h3>
+            <p>Ziraat<br />Yazılım <br />Donanım</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Solis Yazılım ve Mühendislik olarak siz değerli müşterilerimizin
+            memnuniyeti daima öncelikli hedefimiz halindedir.
+            İhtiyaçlarınıza göre Ar-Ge ekibimiz size en uygun çözümleri
+            sunarak, sizlere yardımcı olmak ve destek vermektedir.
+            Bizimle iletişime geçmek için lütfen iletişim
+            bölümünden bize ulaşın.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Giderek Acıkan Dünyanın Yeni Umudu</p>
+    <h1 class="title">Sürdürülebilir Tarım</h1>
+    &nbsp;
+    &nbsp;
+    <div class="process-wrapper">
+      <div id="progress-bar-container">
+        <ul>
+          <li class="step step01 active">
+            <div class="step-inner">SAĞLIKLI</div>
+          </li>
+      
+          <li class="step step02">
+            <div class="step-inner">ULAŞILABİLİR</div>
+          </li>
+      
+          <li class="step step03">
+            <div class="step-inner">VERİMLİ</div>
+          </li>
+          
+          <li class="step step04">
+            <div class="step-inner">ERİŞİLEBİLİR</div>
+          </li>
+        
+      
+          <li class="step step05">
+            <div class="step-inner">EKONOMİK</div>
+          </li>
+        </ul>
+
+        <div id="line">
+          <div id="line-progress"></div>
+        </div>
+      </div>
+
+      <div id="progress-content-section">
+        <div class="section-content discovery active">
+          <h2>SAĞLIKLI</h2>
+          <p>Buralara bir şeyler yazmak lazım</p>
+        </div>
+
+        <div class="section-content strategy">
+          <h2>VERİMLİ</h2>
+          <p>Buralara bir şeyler yazmak lazım</p>
+        </div>
+
+        <div class="section-content creative">
+          <h2>ULAŞILABİLİR</h2>
+          <p>Buralara bir şeyler yazmak lazım</p>
+        </div>
+
+        <div class="section-content production">
+          <h2>ERİŞİLEBİLİR</h2>
+          <p>Buralara bir şeyler yazmak lazım</p>
+        </div>
+
+        <div class="section-content analysis">
+          <h2>EKONOMİK</h2>
+          <p>Buralara bir şeyler yazmak lazım</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+
+      $(".step").click(function () {
+        $(this).addClass("active").prevAll().addClass("active");
+        $(this).nextAll().removeClass("active");
+      });
+
+      $(".step01").click(function () {
+        $("#line-progress").css("width", "3%");
+        $(".discovery").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step02").click(function () {
+        $("#line-progress").css("width", "25%");
+        $(".strategy").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step03").click(function () {
+        $("#line-progress").css("width", "50%");
+        $(".creative").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step04").click(function () {
+        $("#line-progress").css("width", "75%");
+        $(".production").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step05").click(function () {
+        $("#line-progress").css("width", "100%");
+        $(".analysis").addClass("active").siblings().removeClass("active");
+      });
+
+
+    </script>
+
+    </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Çok Yakında</p>
+    <h1 class="title">Ürünler</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">B2C</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">B2B</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">B2B2</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Daha Fazlası</p>
+    <h1 class="title">Bizimle İletişime Geçin</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email_light.png" src-light="./assets/email_light.png" src-dark="./assets/email_dark.png"
+          alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">info@solistechnology.net</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Hakkında</a></li>
+          <li><a href="#experience">Ne Yapıyoruz?</a></li>
+          <li><a href="#projects">Ürünler</a></li>
+          <li><a href="#contact">Bize Ulaşın</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Solis Yazılım ve Mühendislik Tüm Hakları Saklıdır.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
